@@ -2,7 +2,6 @@
 This repo contains templates which can be easily modified and applied for different use cases
 > Adding codes in process...
 
----
 
 ## Codes
 1. [Install local packages](https://github.com/shaohong-g/codes_templates/tree/main/install_local_packages)

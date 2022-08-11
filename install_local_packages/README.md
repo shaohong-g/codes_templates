@@ -9,7 +9,6 @@ There are two ways to install local packages:
 2. Building a **source distribution** for your package and pip installing it.
     - Useful when you want to share the package with other users.
 
----
 
 ## Directory Tree
 ```sh
@@ -25,7 +24,6 @@ There are two ways to install local packages:
 ```
 \* **Note**: `dist` folder and `tar.gz` file will be created after running `python setup.py sdist`
 
----
 
 ## Prerequisites
 The following setup requires the following packages to be installed:
@@ -38,7 +36,6 @@ The following setup requires the following packages to be installed:
 pip install -r requirements.txt
 ```
 
----
 
 ## Usage
 ### Option 1: Install in editable mode
@@ -51,12 +48,10 @@ python setup.py sdist
 pip install ./dist/<PACKAGE.tar.gz>
 ```
 
----
 
 ## Demo
 Sample test cases are written in the test.py file. (Here)[https://github.com/shaohong-g/codes_templates/blob/main/test.py]
 
----
 
 ## Useful Articles / Acknowledgements
 1. requirements.txt
@@ -80,7 +75,6 @@ Sample test cases are written in the test.py file. (Here)[https://github.com/sha
     - [What do we include in init.py](https://www.reddit.com/r/Python/comments/1bbbwk/whats_your_opinion_on_what_to_include_in_init_py/)
     - [Import modules from parent folder](https://stackoverflow.com/questions/714063/importing-modules-from-parent-folder)
 
----
 
 ## Commands used while developing
 - `python -m pip install --upgrade setuptools`
