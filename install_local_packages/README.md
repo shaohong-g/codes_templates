@@ -50,8 +50,11 @@ pip install ./dist/<PACKAGE.tar.gz>
 
 
 ## Demo
-Sample test cases are written in the test.py file. (Here)[https://github.com/shaohong-g/codes_templates/blob/main/test.py]
+Sample test cases are written in the test.py file. [Here](https://github.com/shaohong-g/codes_templates/blob/main/test.py) 
 
+Image below shows the output of the test.py file:
+
+![Test Output in test.py](../static/test_install_packages.PNG "Test Output in test.py")
 
 ## Useful Articles / Acknowledgements
 1. requirements.txt
