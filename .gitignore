@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Others
-celery
 !logger/output.log
+!python_celery/.env

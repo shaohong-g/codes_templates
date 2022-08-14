@@ -1,0 +1,7 @@
+celery
+flower
+redis
+supervisor
+python-dotenv
+pandas
+ipython
