@@ -52,4 +52,4 @@ Production logger level:
 - [Logging guide 1 - from realpython](https://realpython.com/python-logging/)
 - [Logging guide 2 - from machinelearningplus](https://www.machinelearningplus.com/python/python-logging-guide/)
 - [Logging Documentation](https://docs.python.org/3/howto/logging.html)
-= [Logging output coloring](https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output)
+- [Logging output coloring](https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output)
