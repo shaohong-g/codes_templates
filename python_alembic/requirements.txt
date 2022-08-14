@@ -1,0 +1,7 @@
+alembic
+pymysql
+SQLAlchemy
+cryptography
+python-dotenv
+# psycopg2
+# psycopg2-binary

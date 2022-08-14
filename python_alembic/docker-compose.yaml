@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: mysql_db
+    image: mysql:8
+    restart: always
+    ports: 
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    # volumes:
+    #   - sql-db:/var/lib/mysql
+  
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 5050:80
+
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: app:latest
+    command: bash -c "(echo Hello > /dev/null) && (tail -f /dev/null)" # "(alembic revision --autogenerate -m 'Initial migration') && (alembic upgrade head)" #
+    env_file:
+      - .env
+    # volumes:
+    #   - .:/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+      - phpmyadmin
+
+# volumes:
+  # sql-db:

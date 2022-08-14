@@ -131,3 +131,5 @@ dmypy.json
 # Others
 !logger/output.log
 !python_celery/.env
+!python_alembic/.env
+
