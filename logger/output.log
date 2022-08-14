@@ -1,0 +1,4 @@
+2022-08-14 12:54:21,797::test::<module>::20::INFO - Info message
+2022-08-14 12:54:21,798::test::<module>::21::WARNING - Warning message
+2022-08-14 12:54:21,798::test::<module>::22::ERROR - Error message
+2022-08-14 12:54:21,798::test::<module>::23::CRITICAL - Critical message
