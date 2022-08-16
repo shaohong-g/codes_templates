@@ -12,3 +12,5 @@ This repo contains templates which can be easily modified and applied for differ
 6. Python FastAPI - *pending*
 7. Python Flask - *pending*
 8. [Python Logging](https://github.com/shaohong-g/codes_templates/tree/main/logger)
+9. Python Pandas - *pending*
+10. Visualisation - *pending*
