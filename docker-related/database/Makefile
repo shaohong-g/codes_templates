@@ -2,6 +2,7 @@
 # linux/macOS	:	make
 # https://opensource.com/article/18/8/what-how-makefile
 # https://docs.docker.com/compose/profiles/
+# https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed
 
 .PHONY: compose_up stop # define all the targets that are not files so that make will not get confused
 # all: say_hello generate # run more than one target
@@ -9,7 +10,7 @@
 
 phpadmin = 0
 help:
-	@echo "compose_up, compose_stop, compose_remove, compose_remove_all, compose_start, clean_all, clean_others, clean_container, clean_images"
+	@echo "compose_up, compose_down, compose_stop, compose_remove, compose_remove_all, compose_start, clean_all, clean_others, clean_container, clean_images"
 	@echo "argument: phpadmin = 1 or 0 (default=0)"
 
 compose_up:
