@@ -9,10 +9,19 @@
 
 var1 := Hello World
 var2 := 1
+phpadmin = 0
 
 say_hello:
 	@echo "${var1} ${var2}"
-
+ifeq ($(phpadmin), 0)
+	@echo "phpadmin = False -> $(phpadmin)"
+else
+	@echo "phpadmin = True -> $(phpadmin)"
+endif
+	@if [ "test" = "test" ]; then\
+		echo "Hello world";\
+	fi
+	
 generate:
 	@echo "Creating empty text files..."
 	touch file-{1..10}.txt
