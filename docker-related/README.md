@@ -41,3 +41,14 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
 - `docker image prune`
 - `docker network prune`
 - `docker volume prune`
+
+# Accessing
+[public-key-retrieval-is-not-allowed](https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed)
+
+For DBeaver users:
+- Right click your connection, choose "Edit Connection"
+- On the "Connection settings" screen (main screen) click on "Edit Driver Settings"
+- Click on "Connection properties", (In recent versions it named "Driver properties")
+- Right click the "user properties" area and choose "Add new property"
+- Add two properties: "useSSL" and "allowPublicKeyRetrieval"
+- Set their values to "false" and "true" by double clicking on the "value" column
