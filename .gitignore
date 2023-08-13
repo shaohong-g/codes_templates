@@ -132,6 +132,5 @@ dmypy.json
 !logger/output.log
 !python_celery/.env
 !python_alembic/.env
-python_flask
 python_pandas
 visualisation
