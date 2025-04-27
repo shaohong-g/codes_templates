@@ -31,7 +31,16 @@ This repository shows useful commands which will help faciliate the development 
     - `docker rm -f $(docker ps -aq)` *(linux)*
     - `for /F %c in ('docker ps -a -q') do (docker rm %c)` *(windows)*
 
-
+### Others
+```sh
+docker volume ls
+docker network ls
+# Start Docker Service (detached)
+docker compose -f pgvector.yml up -d
+# End Docker Service
+docker compose -f pgvector.yml down -v
+docker compose -f pgvector.yml stop
+```
 
 # Pruning
 Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes. [reference](https://docs.docker.com/engine/reference/commandline/system_prune/)
